@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ServiceBuilder {
 
     // building the URL and automatically handle the data mapping
-    private static final String URL = "URL";  // replace with a working url
+    private static final String URL = "http://localhost:8080/";  // replace with a working url
 
     private static Retrofit.Builder builder = new Retrofit.Builder().baseUrl(URL)
             .addConverterFactory(GsonConverterFactory.create());
